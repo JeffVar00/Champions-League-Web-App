@@ -1,0 +1,32 @@
+div.back{
+	text-align: center; 
+	background-image: url('../img/champions_back.jpg'); 
+	background-size: 100% 100%;
+}
+
+footer{ 
+    height:100px;
+	background-color: #D7E9EF; text-align: center; background-image: url('../img/champions_foot.jpg');
+  	background-size: 100%;
+	  background-repeat: repeat-x;
+	  min-height: 100vh;
+  }
+  
+  footer {
+	text-align: center;
+	padding: 40px 0 20px ;
+	
+}
+
+footer p {
+	color: #f8f8f8;
+	font-size: 14px;
+}
+
+footer a.totop {
+	color: #fff;
+	margin-bottom: 30px;
+}
+footer a.totop:focus {
+	outline: 0;
+}
