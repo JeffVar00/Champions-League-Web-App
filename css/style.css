@@ -1,0 +1,58 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  text-align: left;
+}
+
+hr{
+  color: #002DFF;
+  size="8px"
+}
+
+.blue{
+  color: #002DFF;
+  size="8px"
+}
+
+
+.b-top{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #BE74FA;
+}
+
+.menuTyping{
+  color: black;
+  text-align: center;
+  padding: 50px;
+}
+
+.new {
+  color: black;
+  text-align: center;
+  padding: 10px;
+} 
+
+.title{
+  color: black;
+  padding: 10px;
+}
+
+
+
