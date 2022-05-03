@@ -13,20 +13,52 @@
   box-sizing: border-box;
 }
 
+nav li {
+  list-style: none; 
+  
+  margin: 0 15px 0 60px;
+}
+
+/*article {
+  color:  #D6CFCF;
+}*/
+
+#ChampLogo{
+  padding: 25px;
+}
+
+.LEL {
+  float:  right;
+}
+
+p {
+  color:  #fff;
+  padding:  10px;
+}
+
+h1, h2{
+  color:  #fff;
+  padding:  10px;
+}
+
+#h1P{
+  color: #000;
+}
+
 footer {
   padding: 10px;
-  color: white;
+  color: #fff;
   text-align: left;
 }
 
 hr{
   color: #002DFF;
-  size="8px"
+  size: 8px;
 }
 
 .blue{
   color: #002DFF;
-  size="8px"
+  size: 8px;
 }
 
 
@@ -38,19 +70,19 @@ hr{
 }
 
 .menuTyping{
-  color: black;
+  color: #000;
   text-align: center;
   padding: 50px;
 }
 
 .new {
-  color: black;
+  color: #000;
   text-align: center;
   padding: 10px;
 } 
 
 .title{
-  color: black;
+  color: #000;
   padding: 10px;
 }
 
