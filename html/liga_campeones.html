@@ -11,7 +11,6 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/foot_champions.css">
 <link href="../css/links.css" type="text/css" rel="stylesheet">
-
 </head>
 <body>	
 <nav class="navbar navbar-expand-sm" style= "background-color: #FFF;">
@@ -23,7 +22,7 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
       </ul>
-      <a class="nav-link" href="javascript:void(0)">Inicia Sesión</a>
+      <a class="nav-link" href="login.html">Inicia Sesión</a>
     </div>
   </div>
 </nav>
@@ -40,7 +39,7 @@
     
     <div class="row">
       <div class="col-sm-5">
-          <div class="card" style="width: 100%; height: 350px;">
+          <div class="card" style="width: 100%; ">
             <div class="card-body">
             <h5 class="card-text"><font color="#000644">La Champions League inicia!</font></h5>
             </div>
@@ -51,16 +50,16 @@
       <div class="col-sm-1">
       </div>
       <div class="col-sm-3">
-          <div class="card" style="width:100%; height:350px;">
-            <img src="../img/grupos.jpg" alt="Card image" style="width:100%"></img>
+          <div class="card" style="width:100%; top: 10%;">
+            <a href="#info" ><img src="../img/grupos.jpg" alt="Card image" style="width:100%"></img></a>
             <div class="card-body">
-              <h5 class="card-title"><font color="#000644">Partidos</font></h5>
+              <h5 class="card-title"><font color="#000644">Ultimas competiciones</font></h5>
             </div>
           </div>
         <br>
       </div>
       <div class="col-sm-3">
-          <div class="card" style="width:100%; height:350px;">
+          <div class="card" style="width:100%; top: 10%;">
             <a href="#tablas" ><img src="../img/tabla.jpg" alt="Card image" style="width:100%"></img></a>
             <div class="card-body">
               <h5 class="card-title"><font color="#000644">Tablas de Puntuación</font></h5>
@@ -76,61 +75,187 @@
 <div class="container-fluid">
 
     <br><br>
-    <h3 id="tablas" class="title"><font color="#000644">Tablas de Puntuación Temporada 2022/23</font> </h3>
-    <br><br>
+    <h3 id="tablas" class="title"><font color="#000644">Grupos Temporada 2022/23</font> </h3>
+
+    <div class="container">
+
+    <div class="container-fluid">
   
-    <div class="row">
+    <div class="container mt-5">
 
-      <div class="col-sm-4">
-      <iframe src="Tablas/A.html" name="iframe, A" height="400px" width="100%" title="A"></iframe>
-      </div>
-
-      <div class="col-sm-4">
-      <iframe src="Tablas/B.html" name="iframe, B" height="400px" width="100%" title="B"></iframe>
-      </div>
-
-      <div class="col-sm-4">
-      <iframe src="Tablas/C.html" name="iframe, C" height="400px" width="100%" title="C"></iframe> 
-      </div>
-
-    </div>
-
-    <br>
-
-    <div class="row">
-
-      <div class="col-sm-4">
-      <iframe src="Tablas/D.html" name="iframe, D" height="400px" width="100%" title="D"></iframe>
-      </div>
-
-      <div class="col-sm-4">
-      <iframe src="Tablas/E.html" name="iframe, E" height="400px" width="100%" title="E"></iframe>
-      </div>
-
-      <div class="col-sm-4">
-      <iframe src="Tablas/F.html" name="iframe, F" height="400px" width="100%" title="F"></iframe> 
-      </div>
-
-    </div>
+    <h5><font color="#000644">GRUPO A
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo A" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
     <br>
 
-    <div class="row">
+    <h5><font color="#000644">GRUPO B
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo B" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
-      <div class="col-sm-2">
-      </div>
+    <br>
 
-      <div class="col-sm-4">
-      <iframe src="Tablas/G.html" name="iframe, G" height="400px" width="100%" title="G"></iframe>
-      </div>
+    <h5><font color="#000644">GRUPO C
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo C" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
-      <div class="col-sm-4">
-      <iframe src="Tablas/H.html" name="iframe, H" height="400px" width="100%" title="H"></iframe>
-      </div>
+    <br>
 
-      <div class="col-sm-2">
-      </div>
+    <h5><font color="#000644">GRUPO D
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo D" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
+    <br>
+
+    <h5><font color="#000644">GRUPO E
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo E" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h5><font color="#000644">GRUPO F
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo F" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h5><font color="#000644">GRUPO G
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo G" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h5><font color="#000644">GRUPO H
+    <div id="adicionados"></div>
+    </font></h5>
+    <table id="Grupo H" class="table table-hover" >
+        <thead>
+            <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
+            <th name = "PJ" scope="col">PJ</th>
+            <th name = "G" scope="col">G</th>
+            <th name = "E" scope="col">E</th>
+            <th name = "P" scope="col">P</th>
+            <th name = "GF" scope="col">GF</th>
+            <th name = "GC" scope="col">GC</th>
+            <th name = "DG" scope="col">DG</th>
+            <th name = "Pts" scope="col">Pts</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    
+    </div>       
+
+    <br><br>
+
+    </div>
+    
     </div>
             
 
@@ -141,7 +266,7 @@
 <article style = "background-color: #000645; text-align: center;">
         <br>
           <div class="container mt-3" style="text-align:center;" >
-            <h4>Campeones de los últimos 10 torneos.</h4>
+            <h4 id="info">Campeones de los últimos 10 torneos.</h4>
             <table class="table table-bordered" bgcolor='#FFF' style="width:100%; height: 50%; ;">
               <thead>
                 <tr>
