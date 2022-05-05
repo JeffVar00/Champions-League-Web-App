@@ -6,6 +6,9 @@
 	<link href="../css/bootstrap.css" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="../img/logo.webp">
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/agregar_equipos.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/agregar.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="../css/links.css" type="text/css" rel="stylesheet">
 
@@ -13,7 +16,7 @@
 <body style="background-color: #FFFFFF;">
 <nav class="navbar navbar-expand-sm">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../../index.html" target=_self><img src="../img/UEFA_logo.png" alt="UEFA Home" widht="50" height ="50"></a>
+    <a class="navbar-brand" href="../index.html" target=_self><img src="../img/UEFA_logo.png" alt="UEFA Home" widht="50" height ="50"></a>
     <button class="navbar-toggler bg-secundary navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,25 +29,79 @@
 </nav>
 <br>
 
-<h3 class="new"> Menú de Usuario  </h3> <br><br>
-
-<div class="container-fluid" style = "background-color: #000645;">
+<div class="col-autobg-danger p-5 text-center" style = "background-color: #000645; ">
 	<br>
-	<div class="container" style = "background-color: #FFFFFF;">
-
-    Aqui se agregar:
-
-    Iniciar Sorteo, no debe dejar si no hay menos de 32 equipos
-
-    Ingresar nuevo equipo, no debe dejar mas de 32
-
-    Modificar la informacion, mostrar por tabla los equipos y su grupo
-
-    Modificar partidos como una tabla donde al lado permita agregar un resultado a cada partido o mediate un seleccionador
+		<img src="../img/champions.png" widht="350" height ="350"></img>
+			<br>	<br>
+		<h3>Menu de administrador</h3>
 
 	</div>
+
+<br>
+
+<div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
+		<h3 class="title"><font color="#000644">Agregar Equipos</font> </h3><br>
+    <form name="form" method="post">
+    <p><font color="#000">Nombre Del Equipo: <font></p>
+ 		<input size="30" name = "club" onchange=" mayusculas();" id="club"><br>
+ 	  <div id="message1" hidden>
+    Ingrese un club.
+    </div><br>
+	  <p><font color="#000">Pais: <font></p>
+	  		<select name="pais" id="pais" class="form-select" style="border-color: #000000;">
+	  			<option selected>...</option>
+			  	<option value="r">Italia</option>
+			  	<option value="a">Inglaterra</option>
+			  	<option value="v">Francia</option>
+			  </select>
+		<div id="message2" hidden>
+    Seleccione un pais.
+    </div><br><br>
+
+		<button id="adicionar" class="btn btn-outline-primary" type="button" id="adicionar"> Agregar a la tabla de competidores </button><br>
+
+		</form><br><br>
+
+
+		<h5 class="title" id="adicionados"><font color="#000644">Total Clubes Participando: </font> </h5>
+
+		<table id="myTable" class="table table-bordered " border="1">
+    <thead>
+        <th>Club</th>
+        <th>Pais</th>
+    </thead>
+    <tbody>
+    </tbody>
+		</table>
+
+		<!-- 
+		NOTAS IMPORTANTES, 
+		EL SORTEAR NO SE PUEDE HACER 2 VECES 
+		EL SORTEAR SOLO FUNCIONA SI HAY 32 EQUIPOS
+		SOLO PERMITE 32 EQUIPOS EN LA TABLA (AGREGAR)
+		SOLO PERMITE 32 EQUIPOS LA BASE DE DATOS
+		UNA VEZ SE SORTEA NO SE PUEDE ELIMINAR NINGUN EQUIPO (VERIFICAR QUE SI YA UN EQUIPO TIENE GRUPO, NO PERMITA ELIMINAR DE LA BASE DE DATOS)
+		AL INICIAR ESTA PAGIA DEBE DE CARGARSE TODOS LOS DATOS DE LA TABLA PARA VERIFICAR INFORMACION
+		EL GUARDAR CAMBIOS DEBE VERIFICAR CUALES NO EXISTEN EN LA TABLA Y GUARDARLOS (VER COMO O BUSCAR OTRA FORMA)
+		-->
+
+		<br><button class="btn btn-outline-success" style="align-content: center;" type="button" id="sorteo"> Guardar Cambios. </button> <br><br>
+
+		
+ 
+	</div>
+
+	<div class="col-autobg-danger p-5 text-center" style = "background-color: #000645; ">
 	<br>
-</div>
+		<h5>Temporada 2022/2023</h5>
+		<br><button class="btn btn-outline-warning" style="align-content: center;" type="button" id="sorteo"> Sortear grupos. </button> <br>
+
+	<br>
+	</div>
+
+	
+
+
 
 <br><br>
 
