@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(!$_SESSION['verificar']){
+		header("Location: ../index.html");
+	}
+	echo $_SESSION['user'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +16,7 @@
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
 	<script type="text/javascript" src="../js/agregar_equipos.js"></script>
 	<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="../js/agregar.min.js"></script>
+	<script type="text/javascript" src="../js/agregar_equipos.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="../css/links.css" type="text/css" rel="stylesheet">
 
@@ -40,13 +48,15 @@
 <br>
 
 <div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
+
 		<h3 class="title"><font color="#000644">Agregar Equipos</font> </h3><br>
-    <form name="form" method="post">
+    <form action="../php/procesos/guardar_club.php" name="form" method="post">
     <p><font color="#000">Nombre Del Equipo: <font></p>
  		<input size="30" name = "club" onchange=" mayusculas();" id="club"><br>
  	  <div id="message1" hidden>
     Ingrese un club.
     </div><br>
+
 	  <p><font color="#000">Pais: <font></p>
 	  		<select name="pais" id="pais" class="form-select" style="border-color: #000000;">
 	  			<option selected>...</option>
@@ -83,9 +93,17 @@
 		UNA VEZ SE SORTEA NO SE PUEDE ELIMINAR NINGUN EQUIPO (VERIFICAR QUE SI YA UN EQUIPO TIENE GRUPO, NO PERMITA ELIMINAR DE LA BASE DE DATOS)
 		AL INICIAR ESTA PAGIA DEBE DE CARGARSE TODOS LOS DATOS DE LA TABLA PARA VERIFICAR INFORMACION
 		EL GUARDAR CAMBIOS DEBE VERIFICAR CUALES NO EXISTEN EN LA TABLA Y GUARDARLOS (VER COMO O BUSCAR OTRA FORMA)
+		// 
+		OTRA FORMA
+		AL GUARDAR INMEDIATAMENTE SE GUARDE EN LA BASE DE DATOS, VERIFICA QUE HAYA 31 O MENOS PARA PODER GUARDAR
+		LA TABLA FUNCIONARIA IGUAL.
+		SOLO QUE IN EL GUARDAR CAMBIOS.
+		EL ELIMINAR ELIMINA INMEDIATAMENTE EL EQUIPO DE LA BASE DE DATOS, NO SE PUEDE ELIMINAR SI TIENE UN GRUPO ASIGNADO
+		EL SORTEO NO SE PUEDE REALIZAR UNA VEZ SE HAYA REALIZADO, SE PUEDE VERIFICAR VERIFICANDO UNO DE LA LISTA NADA MAS, SI TIENE GRUPO SE CANCELA.
+		NO SE PUEDE SORTEAR AHSTA QUE HAYAN 32 EQUIPOS.
 		-->
 
-		<br><button class="btn btn-outline-success" style="align-content: center;" type="button" id="sorteo"> Guardar Cambios. </button> <br><br>
+		<br><button class="btn btn-outline-success" style="align-content: center;" type="button" id="sorteo"> Guardar Cambios. </button> <br><br> 
 
 		
  
@@ -95,7 +113,8 @@
 	<br>
 		<h5>Temporada 2022/2023</h5>
 		<br><button class="btn btn-outline-warning" style="align-content: center;" type="button" id="sorteo"> Sortear grupos. </button> <br>
-
+	<!-- SE DIRIGE A UN ARCHIVO SORTEO.PHP DONDE SE CONECTA CON LOS EQUIPOS Y LES AGREGA UN GRUPO -->
+	<!-- LUEGO SE DIRIE A OTRO PHP, DONDE SE GENERAN TODOS LOS PARTIDOS -->
 	<br>
 	</div>
 
