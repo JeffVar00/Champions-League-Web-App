@@ -17,18 +17,6 @@ function validarN() {
       if(!input.value) {
         isValid = false;
       } else { 
-        //ESTO VERIFICA SI EXISTE YA UNO EN LA TABLA O HACER ESTO EN PHP IGUAL QUE CON LOS PAISES
-        //PARA VER QUE NO SE REPITAN 4 VECES
-        //var resume_table = document.getElementById("rwd-table-id");
-
-        //for (var i = 0, row; row = resume_table.rows[i]; i++) {
-        //  //alert(cell[i].innerText);
-        //  for (var j = 0, col; col = row.cells[j]; j++) {
-        //    //alert(col[j].innerText);
-        //    console.log(`Txt: ${col.innerText} \tFila: ${i} \t Celda: ${j}`);
-        //  }
-        //}
-
         isValid = true;
       }
 

@@ -20,19 +20,24 @@
 
 	<div class="container text-center">
 		
-		<form action="login_step.php" method="POST">
+		<form action="login.php" method="POST">
 
         <label for="username">Nombre de usuario</label>
-        <input type="text" placeholder="Usuario" id="username">
+        <input type="text" placeholder="Usuario" name="username">
 
         <label for="password">Contraseña</label>
-        <input type="password" placeholder="Contraseña" id="password">
+        <input type="password" placeholder="Contraseña" name="password">
 
-        <button>Iniciar Sesion</button>
+        <button type="submit">Iniciar Sesion</button>
 
     </form>
 
-
+    <?php
+	if(isset($_POST['username']) && isset($_POST['password'])){
+			require_once "conexiones/conexion.php";
+			require_once "procesos/login.php";
+	}
+	?>
 
   </div>
   <br><br><br>

@@ -5,10 +5,10 @@
 		$club=$_GET['club'];
 		$query="DELETE FROM CLUBES WHERE NOMBRE='$club'";
 		if($mysqli->query($query)){
-			echo "Registro eliminado";
+			echo "<script>alert('Se elimino con exito')</script>";
 		}else{
-			echo "Error no se pudo eliminar el registro";
+			echo "<script>alert('ERROR, No se pudo borrar el registro')</script>";
 		}
 	}else{
-		echo "Error no se pudo procesar la peticion";
+		echo "<script>alert('No se pudo procesar su solicitud')</script>";
 	}
