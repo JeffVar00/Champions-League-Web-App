@@ -3,7 +3,6 @@
 	if(!$_SESSION['verificar']){
 		header("Location: ../index.html");
 	}
-	echo $_SESSION['user'];
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +31,11 @@
       <ul class="navbar-nav me-auto">
       </ul>
       <!-- <a class="nav-link" href="javascript:void(0)">Inicia Sesión</a> -->
+      <?php
+
+					echo $_SESSION['user'];
+
+			?>
     </div>
   </div>
 </nav>
@@ -50,9 +54,9 @@
 <div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
 
 		<h3 class="title"><font color="#000644">Agregar Equipos</font> </h3><br>
-    <form action="../php/procesos/guardar_club.php" name="form" method="post">
+    <form action="procesos/guardar_club.php" name="form" method="post">
     <p><font color="#000">Nombre Del Equipo: <font></p>
- 		<input size="30" name = "club" onchange=" mayusculas();" id="club"><br>
+ 		<input size="30" name="club" onchange=" mayusculas();" id="club"><br>
  	  <div id="message1" hidden>
     Ingrese un club.
     </div><br>
@@ -60,16 +64,16 @@
 	  <p><font color="#000">Pais: <font></p>
 	  		<select name="pais" id="pais" class="form-select" style="border-color: #000000;">
 	  			<option selected>...</option>
-			  	<option value="r">Italia</option>
-			  	<option value="a">Inglaterra</option>
-			  	<option value="v">Francia</option>
+			  	<option value="Italia">Italia</option>
+			  	<option value="Inglaterra">Inglaterra</option>
+			  	<option value="Francia">Francia</option>
 			  </select>
 
 		<div id="message2" hidden>
     Seleccione un pais.
     </div><br><br>
 
-		<button id="adicionar" class="btn btn-outline-primary" type="button" id="adicionar"> Agregar a la tabla de competidores </button><br>
+		<button id="adicionar" class="btn btn-outline-primary" type="submit"> Agregar a la tabla de competidores </button><br>
 
 		</form><br><br>
 
@@ -81,6 +85,18 @@
         <th>Pais</th>
     </thead>
     <tbody>
+    	<?php
+				require_once "conexiones/conexion.php";
+				$query="SELECT * FROM CLUBES";
+				$consulta1=$mysqli->query($query);
+				while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+					echo "<tr>
+						<td>".$fila['NOMBRE']."</td>
+						<td>".$fila['PAIS']."</td>
+						<td><a href='eliminar.php?id=".$fila['NOMBRE']."'>Eliminar</a></td>
+					</tr>";
+				}
+			?>		
     </tbody>
 		</table>
 
@@ -116,7 +132,19 @@
 	<br>
 	</div>
 
-	
+	<div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
+        <h5 class="title" id="adicionados"><font color="#000644">Partidos</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+            </thbody>
+          </table>
+    </div>
 
 
 

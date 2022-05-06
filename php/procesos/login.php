@@ -8,7 +8,7 @@
 		session_start();
 		$_SESSION['user'] = $fila['USER'];
 		$_SESSION['verificar'] = true;
-		header("Location: ../html/menu_usuario.html");
+		header("Location: menu_usuario.php");
 	}else{
 		echo "<script>alert('Los datos son incorrectos')</script>";
 	}
