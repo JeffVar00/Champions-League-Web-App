@@ -43,7 +43,7 @@
             <div class="card-body">
             <h5 class="card-text"><font color="#000644">La Champions League inicia!</font></h5>
             </div>
-            <img class="card-img-bottom" src="../img/champions_cup.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-bottom img-fluid" src="../img/champions_cup.jpg" alt="Card image" style="width:100%">
           </div>
         <br>
       </div>
@@ -51,7 +51,7 @@
       </div>
       <div class="col-sm-3">
           <div class="card" style="width:100%; top: 10%;">
-            <a href="#info" ><img src="../img/grupos.jpg" alt="Card image" style="width:100%"></img></a>
+            <a href="#info" ><img class="img-fluid" src="../img/grupos.jpg" alt="Card image" style="width:100%"></img></a>
             <div class="card-body">
               <h5 class="card-title"><font color="#000644">Ultimas competiciones</font></h5>
             </div>
@@ -60,7 +60,7 @@
       </div>
       <div class="col-sm-3">
           <div class="card" style="width:100%; top: 10%;">
-            <a href="#tablas" ><img src="../img/tabla.jpg" alt="Card image" style="width:100%"></img></a>
+            <a href="#tablas" ><img class="img-fluid" src="../img/tabla.jpg" alt="Card image" style="width:100%"></img></a>
             <div class="card-body">
               <h5 class="card-title"><font color="#000644">Tablas de Puntuación</font></h5>
             </div>
@@ -99,6 +99,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+          <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'A' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -120,6 +139,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+        <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'B' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -141,6 +179,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+        <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'C' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -162,6 +219,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+          <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'D' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -183,6 +259,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+          <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'E' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -204,6 +299,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+          <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'F' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -225,6 +339,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+          <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'G' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 
@@ -246,6 +379,25 @@
             <th name = "Pts" scope="col">Pts</th>
         </thead>
         <tbody>
+          <?php
+          require_once "conexiones/conexion.php";
+          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'H' ORDER BY Pts DESC";
+          $consulta1=$mysqli->query($query1);
+          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+            echo "
+              <tr>
+              <td>".$fila1['NOMBRE']."</td>
+              <td>".$fila1['PJ']."</td>
+              <td>".$fila1['PG']."</td>
+              <td>".$fila1['PP']."</td>
+              <td>".$fila1['PE']."</td>
+              <td>".$fila1['GF']."</td>
+              <td>".$fila1['DG']."</td>
+              <td>".$fila1['GC']."</td>
+              <td>".$fila1['Pts']."</td>
+            </tr>"; 
+          }
+        ?>
         </tbody>
     </table>
 

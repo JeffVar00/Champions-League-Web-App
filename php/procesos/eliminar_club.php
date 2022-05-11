@@ -1,14 +1,29 @@
 <?php
+	require_once "../conexiones/conexion.php";
+	if(isset($_GET['id'])){ 
+		$club=$_GET['id'];
 
-	require_once "../conexiones/conexion_club.php";
-	if(isset($_GET['nombre'])){ //CREO QUE LA OPCION DE ELIMINAR GENERARIA PROBLEMAS PORQUE NO HAY FORMA DE SABER CUAL SE ESTARIA ELIMINANDO, MEJOR DEJAR DE LADO MIENTRAS, IGUAL NO ES FUNCIONALIDAD OBLIGATORIA
-		$club=$_GET['club'];
-		$query="DELETE FROM CLUBES WHERE NOMBRE='$club'";
-		if($mysqli->query($query)){
-			echo "<script>alert('Se elimino con exito')</script>";
+		$query_verif="SELECT * FROM CLUBES WHERE NOMBRE='$club'";
+		$consulta_grupo=$mysqli->query($query_verif);
+
+		$fila = $consulta_grupo->fetch_array(MYSQLI_ASSOC);
+
+		if($fila['ID_GRUPO'] != NULL){
+			header("refresh:0.1;url= ../menu_usuario.php");
+			echo "<script>alert('ERROR, No se puede eliminar un equipo una vez iniciada la temporada')</script>";
 		}else{
-			echo "<script>alert('ERROR, No se pudo borrar el registro')</script>";
+			$query_delete="DELETE FROM CLUBES WHERE NOMBRE='$club'";
+			if($mysqli->query($query_delete)){
+				header("refresh:0.1;url= ../menu_usuario.php");
+			}else{
+				header("refresh:0.1;url= ../menu_usuario.php");
+				echo "<script>alert('ERROR, No se pudo borrar el registro')</script>";
+			}
 		}
+
+
+
 	}else{
+		header("refresh:0.1;url= ../menu_usuario.php");
 		echo "<script>alert('No se pudo procesar su solicitud')</script>";
 	}

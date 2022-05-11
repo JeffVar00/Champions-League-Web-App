@@ -5,31 +5,29 @@
 	<link href="../css/bootstrap.css" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="../img/logo.webp">
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/login.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="../css/links.css" type="text/css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
 </head>
 
-<!-- Basado en este codigo https://codepen.io/fghty/pen/PojKNEG  -->
-
-<body>
-
-	<div class="container text-center">
-		
-		<form action="login.php" method="POST">
-
-        <label for="username">Nombre de usuario</label>
-        <input type="text" placeholder="Usuario" name="username">
-
-        <label for="password">Contraseña</label>
-        <input type="password" placeholder="Contraseña" name="password">
-
-        <button type="submit">Iniciar Sesion</button>
-
+<body style="background-color: #000645;">
+<div class="container">
+	<br>
+	<div class="container text-center" class="img-fluid">
+	<img src="../img/champions.png" widht="350" height ="350"></img>
+    <form action="login.php" method="POST">
+    <div class="mb-3 mt-3">
+      <label for="username"><font color="#FFFFFF">Nombre de usuario:</font></label>
+      <input class="form-control"placeholder="Usuario" name="username">
+    </div>
+    <div class="mb-3">
+      <label for="password"><font color="#FFFFFF">Contraseña:</font></label>
+      <input  type="password" class="form-control" placeholder="Contraseña" name="password">
+    </div>
+   
+    <div class="col-autobg-danger p-5 text-center" >
+	<button type="submit" class="btn btn-outline-info">Iniciar Sesion</button>
+	</div>
     </form>
 
     <?php
@@ -40,25 +38,7 @@
 	?>
 
   </div>
-  <br><br><br>
-    
-
-	<footer style="text-align: center;">
-
-	  <section class="section footer-nav-neutral">
-	    <div class="container-fluid">
-	      <div class="row">
-	        <div class="col-xs-12">
-	          <div >
-	            <p><font color="#FFFFFF">&copy; 1998-2022 UEFA. Todos los derechos reservados</font></p>
-	            <p><font color="#FFFFFF">La palabra UEFA, el logo de la UEFA y todas las marcas relacionadas con las competiciones de la UEFA están protegidas por las marcas registradas y/o por el copyright de UEFA. Se prohíbe el uso de estas marcas registradas para uso comercial. El uso de UEFA.com significa la aceptación de sus Términos, Condiciones y Política de Privacidad.</font></p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </section>
-
-	</footer>
+</div>
 
 </body>
 </html>

@@ -1,10 +1,4 @@
 
-
-function mayusculas() {
-  const x = document.getElementById("name");
-  x.value = x.value.charAt(0).toUpperCase();
-}
-
 function validarN() {
       let isValid = false;
       const input = document.forms['form']['club'];
@@ -54,16 +48,4 @@ function validarP() {
       }
 
       return isValid;
-    }
-
-function verificar() {
-      const valido = validarP();
-      const valido2 = validarN();
-      if (!valido || !valido2) {
-        return false;
-      } else {
-        document.forms['form']['pais'].style.borderColor = '#000000';
-        document.forms['form']['club'].style.borderColor = '#000000';
-        return true;
-      }
     }
