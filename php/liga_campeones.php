@@ -415,6 +415,245 @@
 
 </div>
 
+<div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
+        <h4 class="title"><font color="#000644">Partidos</font></h4>
+        <br>
+        <h5 class="title"><font color="#000644">Grupo A</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO = 'A'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+
+          <br>
+        <h5 class="title"><font color="#000644">Grupo B</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'B'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+        <h5 class="title"><font color="#000644">Grupo C</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'C'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+                <h5 class="title"><font color="#000644">Grupo D</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'D'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+                <h5 class="title"><font color="#000644">Grupo E</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'E'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+                <h5 class="title"><font color="#000644">Grupo F</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'F'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+                <h5 class="title"><font color="#000644">Grupo G</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'G'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+                <h5 class="title"><font color="#000644">Grupo H</font></h5>
+            <table id="myTable" class="table table-bordered " border="1">
+                <thead>
+                  <th>ID_Partido</th>
+                    <th>Casa</th>
+                    <th>Goles</th>
+                    <th> vs </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                </thead>
+            <thbody>
+              <?php
+        require_once "conexiones/conexion.php";
+        $query="SELECT * FROM PARTIDOS WHERE ID_GRUPO= 'H'";
+        $consulta1=$mysqli->query($query);
+        while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
+          echo "<tr>
+            <td>".$fila['ID_PARTIDO']."</td>
+            <td>".$fila['CASA']."</td>
+            <td>".$fila['G_CASA']."</td>
+            <td> vs </td>
+            <td>".$fila['G_VISITANTE']."</td>
+            <td>".$fila['VISITANTE']."</td>
+          </tr>";
+        }
+      ?>  
+            </thbody>
+          </table>
+        <br>
+
+    </div>
+
 <article style = "background-color: #000645; text-align: center;">
         <br>
           <div class="container mt-3" style="text-align:center;" >
