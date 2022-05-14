@@ -421,12 +421,12 @@
         <h5 class="title"><font color="#000644">Grupo A</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -435,7 +435,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -451,12 +451,12 @@
         <h5 class="title"><font color="#000644">Grupo B</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -465,7 +465,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -480,12 +480,12 @@
         <h5 class="title"><font color="#000644">Grupo C</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -494,7 +494,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -509,12 +509,12 @@
                 <h5 class="title"><font color="#000644">Grupo D</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -523,7 +523,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -538,12 +538,12 @@
                 <h5 class="title"><font color="#000644">Grupo E</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -552,7 +552,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -567,12 +567,12 @@
                 <h5 class="title"><font color="#000644">Grupo F</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -581,7 +581,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -596,12 +596,12 @@
                 <h5 class="title"><font color="#000644">Grupo G</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -610,7 +610,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>
@@ -625,12 +625,12 @@
                 <h5 class="title"><font color="#000644">Grupo H</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
-                    <th>Casa</th>
+                   
+                    <th width="35%">Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
                     <th>Goles</th>
-                    <th>Visitante</th>
+                    <th width="35%">Visitante</th>
                 </thead>
             <thbody>
               <?php
@@ -639,7 +639,7 @@
         $consulta1=$mysqli->query($query);
         while($fila=$consulta1->fetch_array(MYSQLI_ASSOC)){
           echo "<tr>
-            <td>".$fila['ID_PARTIDO']."</td>
+            
             <td>".$fila['CASA']."</td>
             <td>".$fila['G_CASA']."</td>
             <td> vs </td>

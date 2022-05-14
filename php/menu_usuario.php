@@ -160,12 +160,187 @@
 	</div>
 
 	<div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
+		<h4 class="title"><font color="#000644">Grupos</font></h4>
+        <br>
+        <div class="row">
+        	<div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo A</font></h5>
+		        <table id="Grupo A" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'A'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo B</font></h5>
+		        <table id="Grupo B" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'B'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo C</font></h5>
+		        <table id="Grupo C" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'C'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo D</font></h5>
+		        <table id="Grupo D" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'D'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo E</font></h5>
+		        <table id="Grupo E" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'E'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo F</font></h5>
+		        <table id="Grupo F" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'F'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo G</font></h5>
+		        <table id="Grupo G" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'G'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+		    <div class="col-sm-3">
+		        <h5 class="title"><font color="#000644">Grupo H</font></h5>
+		        <table id="Grupo H" class="table table-hover" >
+		        <thead>
+		            <th name = "club" scope="col" width="80%"><font color="#929292">Clubes</font></th>
+		        </thead>
+		        <tbody>
+		          <?php
+		          require_once "conexiones/conexion.php";
+		          $query1="SELECT * FROM CLUBES WHERE ID_GRUPO = 'H'";
+		          $consulta1=$mysqli->query($query1);
+		          while($fila1=$consulta1->fetch_array(MYSQLI_ASSOC)){
+		            echo "
+		              <tr>
+		              <td>".$fila1['NOMBRE']."</td>
+		            </tr>"; 
+		          }
+		        ?>
+		        </tbody>
+		    	</table>
+		    </div>
+    	</div>
+	</div>
+
+	<div class="col-autobg-danger p-5 text-center" style = "background-color: #FFFFFF;">
         <h4 class="title"><font color="#000644">Partidos</font></h4>
         <br>
         <h5 class="title"><font color="#000644">Grupo A</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                	<th>ID_Partido</th>
+                	<th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -195,7 +370,7 @@
         <h5 class="title"><font color="#000644">Grupo B</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                	<th>ID_Partido</th>
+                	<th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -224,7 +399,7 @@
                 <h5 class="title"><font color="#000644">Grupo C</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
+                  <th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -253,7 +428,7 @@
                 <h5 class="title"><font color="#000644">Grupo D</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
+                  <th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -282,7 +457,7 @@
                 <h5 class="title"><font color="#000644">Grupo E</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
+                  <th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -311,7 +486,7 @@
                 <h5 class="title"><font color="#000644">Grupo F</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
+                  <th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -340,7 +515,7 @@
                 <h5 class="title"><font color="#000644">Grupo G</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
+                  <th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
@@ -369,7 +544,7 @@
                 <h5 class="title"><font color="#000644">Grupo H</font></h5>
             <table id="myTable" class="table table-bordered " border="1">
                 <thead>
-                  <th>ID_Partido</th>
+                  <th width="10%">ID_Partido</th>
                     <th>Casa</th>
                     <th>Goles</th>
                     <th> vs </th>
