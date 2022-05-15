@@ -90,9 +90,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -130,9 +130,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -170,9 +170,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -210,9 +210,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -250,9 +250,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -290,9 +290,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -330,9 +330,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -370,9 +370,9 @@
         <thead>
             <th name = "club" scope="col" width="80%"><font color="#929292">Club</font></th>
             <th name = "PJ" scope="col">PJ</th>
-            <th name = "G" scope="col">G</th>
-            <th name = "E" scope="col">E</th>
-            <th name = "P" scope="col">P</th>
+            <th name = "PG" scope="col">G</th>
+            <th name = "PP" scope="col">E</th>
+            <th name = "PE" scope="col">P</th>
             <th name = "GF" scope="col">GF</th>
             <th name = "GC" scope="col">GC</th>
             <th name = "DG" scope="col">DG</th>
@@ -392,8 +392,8 @@
               <td>".$fila1['PP']."</td>
               <td>".$fila1['PE']."</td>
               <td>".$fila1['GF']."</td>
-              <td>".$fila1['DG']."</td>
               <td>".$fila1['GC']."</td>
+              <td>".$fila1['DG']."</td>
               <td>".$fila1['Pts']."</td>
             </tr>"; 
           }
@@ -631,6 +631,7 @@
                     <th> vs </th>
                     <th>Goles</th>
                     <th width="35%">Visitante</th>
+
                 </thead>
             <thbody>
               <?php

@@ -36,8 +36,8 @@
 					$query_puntos_visitante = "UPDATE CLUBES SET PJ = PJ + 1, PE = PE + 1, GF = GF + '$gvisitante2', GC = GC + '$gcasa2', DG = GF - GC, Pts = Pts + 1 WHERE NOMBRE='$visita'";
 				}
 				
-				$mysqli->query($query_puntos_casa)
-				$mysqli->query($query_$query_puntos_visitante)
+				$mysqli->query($query_puntos_casa);
+				$mysqli->query($query_puntos_visitante);
 
 				$query_actualizar="UPDATE PARTIDOS
 	  									SET G_CASA='$gcasa2' , G_VISITANTE='$gvisitante2'
